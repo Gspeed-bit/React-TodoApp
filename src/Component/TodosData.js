@@ -13,12 +13,12 @@
     {
         id: 3,
         text: "Clean gecko tank",
-        completed: false
+        completed: true
     },
     {
         id: 4,
         text: "Mow lawn",
-        completed: true
+        completed: false
     },
     {
         id: 5,

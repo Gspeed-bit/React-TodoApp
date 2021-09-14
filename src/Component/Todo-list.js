@@ -1,13 +1,21 @@
-import React from 'react'
+import React, {Component} from 'react'
 
 
-function Todolist(props) {
+class Todolist extends Component{
+   render (){
+
+   
     return (
         <div className="todo-item">
-         <input type="checkbox" />
-             <p>{props.item.text}</p> 
+         <input type="checkbox" 
+         defaultChecked= {this.props.item.completed} 
+         onChange = {()=> this.props.handleChange(this.props.item.id)}
+         />
+             <p>{this.props.item.text}</p> 
         </div>
     )
 }
+}
+
 
 export default Todolist
