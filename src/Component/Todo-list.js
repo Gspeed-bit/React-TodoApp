@@ -1,9 +1,14 @@
 import React, {Component} from 'react'
 
+const completedStyle = {
+    fontStyle: "italic",
+    color: "#cdcdcd",
+    textDecoration: "line-through"
+}
 
 class Todolist extends Component{
    render (){
-
+    
    
     return (
         <div className="todo-item">
@@ -11,7 +16,7 @@ class Todolist extends Component{
          defaultChecked= {this.props.item.completed} 
          onChange = {()=> this.props.handleChange(this.props.item.id)}
          />
-             <p>{this.props.item.text}</p> 
+             <p style={this.props.item.completed ? completedStyle: null}>{this.props.item.text}</p> 
         </div>
     )
 }

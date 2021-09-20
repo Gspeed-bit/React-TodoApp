@@ -1,9 +1,10 @@
 
     const TodosData = [
+    
     {
         id: 1,
         text: "Take out the trash",
-        completed: true
+        completed: false
     },
     {
         id: 2,
@@ -13,7 +14,7 @@
     {
         id: 3,
         text: "Clean gecko tank",
-        completed: true
+        completed: false
     },
     {
         id: 4,
@@ -25,6 +26,7 @@
         text: "Catch up on Arrested Development",
         completed: false
     }
+
 ]
     
 export default TodosData
